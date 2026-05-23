@@ -1,14 +1,40 @@
 # mis-skills
 
-Colección personal de **agent skills** para diseño frontend de alta gama, dirección de imágenes con AI y disciplina de output. Compatible con **Claude Code, OpenAI Codex, Cursor, Continue, Gemini Antigravity** y cualquier agente que lea `~/.agents/skills/`.
+> **10 agent skills** para diseño frontend de alta gama, dirección de imágenes con AI y disciplina de output.
+> Compatibles con **Claude Code · OpenAI Codex · Cursor · Continue · Gemini Antigravity**.
 
-## ¿Qué es esto?
+```
+mis-skills/
+├── skills/
+│   ├── design-styles/          6 skills — UI taste enforcers
+│   │   ├── taste-skill/
+│   │   ├── brutalist-skill/
+│   │   ├── minimalist-skill/
+│   │   ├── soft-skill/
+│   │   ├── gpt-tasteskill/
+│   │   └── redesign-skill/
+│   ├── design-systems/         1 skill — Stitch DESIGN.md generator
+│   │   └── stitch-skill/
+│   ├── image-direction/        2 skills — AI image art direction
+│   │   ├── images-taste-skill/
+│   │   └── frontendwebsiteimageskill/
+│   └── meta/                   1 skill — LLM output control
+│       └── output-skill/
+├── scripts/sync-skills.sh      cross-agent symlink syncer
+├── install.sh                  one-line installer
+└── docs/ECOSYSTEM-AUDIT.md     curaduría de skills del ecosistema
+```
 
-Las **agent skills** son archivos `SKILL.md` que un agente de IA carga automáticamente cuando el contexto coincide con su `description`. Funcionan como "expertise modular" que se activa on-demand.
+## ¿Qué es una agent skill?
 
-Este repo tiene 10 skills que fui afinando para forzar a los LLMs a producir UI de calidad profesional, romper sus sesgos por defecto (headings de 6 líneas, grids con huecos, gradientes genéricos) y entregar código completo sin truncar.
+Un `SKILL.md` con frontmatter YAML. El agente lo carga **automáticamente** cuando el contexto coincide con la `description`. Funcionan como expertise modular que se activa on-demand sin que tengas que escribir prompts largos cada vez.
 
-## Inventario
+Este repo tiene 10 skills afinadas para:
+- Forzar a los LLMs a producir UI de calidad profesional
+- Romper sesgos por defecto (headings de 6 líneas, grids con huecos, gradientes genéricos cyan-purple)
+- Entregar código completo sin truncar con `// ... rest of code`
+
+## Inventario detallado
 
 ### 🎨 Design styles (`skills/design-styles/`)
 | Skill | Función |
