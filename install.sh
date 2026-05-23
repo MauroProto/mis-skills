@@ -25,30 +25,27 @@ added=0
 already=0
 collision=0
 
-# Encontrar todos los directorios que contengan SKILL.md bajo skills/
-while IFS= read -r skill_dir; do
+# Encontrar todos los directorios que contengan SKILL.md
+# Recorre BOTH skills/ (propias) y external/ (de terceros)
+while IFS= read -r skill_md; do
+  skill_dir=$(dirname "$skill_md")
   name=$(basename "$skill_dir")
   target="$POOL/$name"
 
   if [[ -L "$target" ]]; then
-    # Ya es symlink — comprobar destino
     current=$(readlink "$target")
     if [[ "$current" == "$skill_dir" ]]; then
       ((already++))
     else
-      echo "  ⚠ $name: symlink apunta a OTRO destino, no toco ($current)"
       ((collision++))
     fi
   elif [[ -e "$target" ]]; then
-    # Existe como dir real — colisión
-    echo "  ⚠ $name: ya existe en el pool como dir real, no toco"
     ((collision++))
   else
     ln -s "$skill_dir" "$target"
-    echo "  ✔ $name → $skill_dir"
     ((added++))
   fi
-done < <(find "$REPO_DIR/skills" -mindepth 2 -maxdepth 2 -type d)
+done < <(find "$REPO_DIR/skills" "$REPO_DIR/external" -name SKILL.md 2>/dev/null)
 
 echo ""
 echo "  Resumen Fase 1: agregadas:$added existentes:$already colisiones:$collision"

@@ -5,25 +5,32 @@
 
 ```
 mis-skills/
-├── skills/
+├── skills/                     ← 10 skills propias (de Mauro)
 │   ├── design-styles/          6 skills — UI taste enforcers
-│   │   ├── taste-skill/
-│   │   ├── brutalist-skill/
-│   │   ├── minimalist-skill/
-│   │   ├── soft-skill/
-│   │   ├── gpt-tasteskill/
-│   │   └── redesign-skill/
 │   ├── design-systems/         1 skill — Stitch DESIGN.md generator
-│   │   └── stitch-skill/
 │   ├── image-direction/        2 skills — AI image art direction
-│   │   ├── images-taste-skill/
-│   │   └── frontendwebsiteimageskill/
 │   └── meta/                   1 skill — LLM output control
-│       └── output-skill/
+├── external/                   ← 128 skills curadas de terceros (con atribución)
+│   ├── README.md               ← tabla de licencias y autores
+│   ├── anthropics-skills/ (17)         pbakaus-impeccable/ (1)
+│   ├── mattpocock-skills/ (28)         shadcn-ui-ui/ (1)
+│   ├── obra-superpowers/ (14)          mattbx-shadcn-skills/ (2)
+│   ├── expo-skills/ (15)               supabase-agent-skills/ (2)
+│   ├── wshobson-agents/ (12)           neondatabase-agent-skills/ (4)
+│   ├── vercel-labs-agent-skills/ (8)   tursodatabase-agent-skills/ (1)
+│   ├── nextlevelbuilder-ui-ux-pro-max/ (7)
+│   ├── leonxlnx-taste-skill/ (4)       coreyhaines31-marketingskills/ (2)
+│   ├── vercel-labs-next-skills/ (3)    vercel-labs-skills/ (1)
+│   ├── vercel-ai/ (1)                  vercel-turborepo/ (1)
+│   ├── jakubantalik-transitions-dev/ (1)  emilkowalski-skill/ (1)
+│   ├── arvindrk-extract-design-system/ (1)
+│   └── sickn33-antigravity-awesome-skills/ (1)
 ├── scripts/sync-skills.sh      cross-agent symlink syncer
-├── install.sh                  one-line installer
-└── docs/ECOSYSTEM-AUDIT.md     curaduría de skills del ecosistema
+├── install.sh                  one-line installer (symlinkea TODO al pool)
+└── docs/ECOSYSTEM-AUDIT.md     curaduría comparativa
 ```
+
+**Total: 138 skills** (10 propias + 128 de terceros bajo licencia permisiva).
 
 ## ¿Qué es una agent skill?
 
