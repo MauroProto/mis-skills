@@ -10,7 +10,7 @@ mis-skills/
 │   ├── design-systems/         1 skill — Stitch DESIGN.md generator
 │   ├── image-direction/        2 skills — AI image art direction
 │   └── meta/                   1 skill — LLM output control
-├── external/                   ← 128 skills curadas de terceros (con atribución)
+├── external/                   ← 129 skills curadas de terceros (con atribución)
 │   ├── README.md               ← tabla de licencias y autores
 │   ├── anthropics-skills/ (17)         pbakaus-impeccable/ (1)
 │   ├── mattpocock-skills/ (28)         shadcn-ui-ui/ (1)
@@ -24,13 +24,14 @@ mis-skills/
 │   ├── vercel-ai/ (1)                  vercel-turborepo/ (1)
 │   ├── jakubantalik-transitions-dev/ (1)  emilkowalski-skill/ (1)
 │   ├── arvindrk-extract-design-system/ (1)
+│   ├── aparente-tufte-viz/ (1 — Edward Tufte data viz principles, 4 demos HTML)
 │   └── sickn33-antigravity-awesome-skills/ (1)
 ├── scripts/sync-skills.sh      cross-agent symlink syncer
 ├── install.sh                  one-line installer (symlinkea TODO al pool)
 └── docs/ECOSYSTEM-AUDIT.md     curaduría comparativa
 ```
 
-**Total: 138 skills** (10 propias + 128 de terceros bajo licencia permisiva).
+**Total: 139 skills** (10 propias + 129 de terceros bajo licencia permisiva).
 
 ## ¿Qué es una agent skill?
 

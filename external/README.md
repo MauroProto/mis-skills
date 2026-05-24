@@ -1,12 +1,13 @@
 # external/ — Skills de terceros
 
-Este directorio contiene **128 agent skills** de otros autores, curadas de los topics más relevantes de [skills.sh](https://skills.sh) (design, nextjs, react, databases) y de los repos de autores reconocidos del ecosistema. **Todo el contenido bajo `external/` es propiedad intelectual de sus autores originales**, copiado aquí solo como conveniencia de instalación bajo las licencias permisivas correspondientes.
+Este directorio contiene **129 agent skills** de otros autores, curadas de los topics más relevantes de [skills.sh](https://skills.sh) (design, nextjs, react, databases) y de los repos de autores reconocidos del ecosistema. **Todo el contenido bajo `external/` es propiedad intelectual de sus autores originales**, copiado aquí solo como conveniencia de instalación bajo las licencias permisivas correspondientes.
 
 ## Atribución y licencias
 
 | Carpeta | Repo original | Skills | Licencia | Autor |
 |---|---|---:|---|---|
 | `anthropics-skills/` | [anthropics/skills](https://github.com/anthropics/skills) | 17 | MIT | Anthropic |
+| `aparente-tufte-viz/` | [gist aparente/e48c353…](https://gist.github.com/aparente/e48c353755958621b3c0004593105a90) | 1 | sin LICENSE explícita (gist público) | aparente |
 | `arvindrk-extract-design-system/` | [arvindrk/extract-design-system](https://github.com/arvindrk/extract-design-system) | 1 | MIT | Arvind RK |
 | `coreyhaines31-marketingskills/` | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 2 | MIT | Corey Haines |
 | `emilkowalski-skill/` | [emilkowalski/skill](https://github.com/emilkowalski/skill) | 1 | sin LICENSE explícita | Emil Kowalski |
@@ -30,7 +31,7 @@ Este directorio contiene **128 agent skills** de otros autores, curadas de los t
 | `vercel-turborepo/` | [vercel/turborepo](https://github.com/vercel/turborepo) | 1 | MIT | Vercel |
 | `wshobson-agents/` | [wshobson/agents](https://github.com/wshobson/agents) | 12 | MIT | wshobson |
 
-**Total:** 128 skills, mayoritariamente bajo licencia MIT (permisiva — permite redistribución con atribución), unas pocas Apache-2.0 (también permisiva), y algunas sin LICENSE explícita pero públicas en GitHub.
+**Total:** 129 skills, mayoritariamente bajo licencia MIT (permisiva — permite redistribución con atribución), unas pocas Apache-2.0 (también permisiva), y algunas sin LICENSE explícita pero públicas en GitHub.
 
 ## Sobre los repos sin LICENSE explícita
 
